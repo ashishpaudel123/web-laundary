@@ -1,0 +1,237 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fafafa;
+}
+.bg-blue{
+  background-color: rgb(0,71,171);
+}
+.text-blue{
+  color: rgb(0,71,171);
+}
+.bg-blue-gra{
+  background: rgb(0,71,171);
+background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+}
+.expimg{
+  position: relative;
+  left: 80px !important;
+}
+.exp{
+  position: absolute;
+  top: 70px !important;
+  left: -80px;
+  width: 50% !important;
+}
+.timepickup{
+  width: 100% !important;
+}
+.img img{
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50% !important;
+  width: 80px !important;
+  height: 80px !important;
+}
+.homebg{
+  background-color: rgba(0, 85, 255, 0.676);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.home p.h{
+  font-size: 65px !important;
+}
+.m{
+  font-size: 45px !important;
+  line-height: 1;
+}
+.bg-light-blue{
+  background-color: #7CB9E8;
+}
+.pb-5{
+  padding-bottom: 60px !important;
+}
+.m-20{
+  margin: -30px !important;
+  z-index: 1;
+}
+.bg-light-blue{
+  background-color: #B9D9EB;
+}
+.text-justify{
+  text-align: justify;
+}
+.h-100{
+  height: 120px !important;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.gap-g{
+  gap: 12px;
+}
+.gap-g a{
+  text-decoration: underline !important;
+}
+button.pickuphover:hover{
+  color: black !important;
+  opacity: 90%;
+  transition: 0.7s;
+  transform: scale(1.03);
+  background-color:rgba(0, 71, 171, 0.772) !important;
+}
+button.purchasehover:hover{
+  transition: 0.5s;
+  transform: scale(1.01);
+}
+li{
+  list-style: none;
+}
+.br{
+  border-radius: 25px 10px 60px 25px !important;
+}
+.text-gradient{
+  color:linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+}
+a{
+  text-decoration: none !important;
+}
+.fixed{
+  position: fixed;
+  width: 100%;
+}
+.top-0{
+  top: 0px;
+}
+header{
+  z-index: 20;
+}
+img.s-w-50{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: 16 / 9 !important;
+}
+.l4
+{
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 4; /* number of lines to show */
+line-clamp: 4;
+-webkit-box-orient: vertical;
+}
+
+header .nav-link{
+  color: #fafafa !important;
+}
+header .nav-link:hover{
+  color: #fafafae3 !important;
+  transition: 1s;
+  transform: scale(1.03);
+}
+section.pricing ul li {
+  margin: 10px !important;
+  font-weight: 600;
+  color: black;
+  opacity: 100%;
+}
+.w-40{
+  width: 49% !important;
+}
+.btn-info:hover{
+ background-color: rgb(188, 188, 13);
+ color: rgba(0, 0, 0, 0.719);
+ transition: 0.5s;
+ transform: scale(1.04);
+}
+.btn-warning:hover{
+  background-color: rgb(188, 188, 13);
+  color: rgba(0, 0, 0, 0.719);
+  transition: 0.5s;
+  transform: scale(1.04);
+ }
+@media(max-width:768px) {
+  .expimg{
+    display: flex;
+    flex-direction: column;
+    left: 0px !important;
+  }
+  .exp{
+    position: relative;
+      top: 0px !important;
+      left: 0px !important;
+  }
+}
+.text-dark{
+  color: #ffffff;
+  opacity: 85%;
+}
+.white-50{
+  color: white;
+  opacity: 90%;
+}
+
+@media  (max-width:992px) {
+  /* .expimg{
+      position: relative !important;
+      left: 0px !important;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+  .exp{
+    width: 100%;
+display: inline-block; }*/
+.m-20{
+  margin: 15px !important;
+  z-index: 0;
+  gap: 20px;
+
+}
+.m20w{
+  width: 100% !important;
+}
+.s2c{
+  background: rgb(0,71,171);
+  background: linear-gradient(159deg, rgba(0,71,171,1) 0%, rgba(28,169,201,1) 100%);
+}
+.s2c p{
+  color: white;
+}
+
+  }
+@media (max-width:500px) {
+ul.navbar-nav{
+gap: 10px !important;
+} 
+ul.navbar-nav li{
+  border-bottom: 1px solid #B9D9EB;
+ } 
+ .home p.h{
+  font-size: 60px !important;
+  line-height: 1.3;
+}
+}
+
+@media (min-width:650px) and (max-width:768px) {
+  ul.navbar-nav{
+      margin-inline-start: auto;
+   gap: 10px !important;
+  } 
+  }
+
+
+  @media (max-width:649px) {
+      ul.navbar-nav{
+       gap: 10px !important;
+      } 
+      .w-40{
+        width: 100% !important;
+      }
+      }
