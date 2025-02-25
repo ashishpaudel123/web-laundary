@@ -85,7 +85,7 @@ function page() {
     {/* Clean clothes esay life start */}
     <section className="bg-blue-gra py-3 text-center">
       <div className="container">
-        <marquee  className="fw-bold fs-1">" <span className="text-warning">Clean</span> <span className="text-danger">Clothes</span>  <span className="text-light">Easy Life</span>" </marquee>
+        <marquee direction="left"  className="fw-bold fs-1">" <span className="text-warning">Clean</span> <span className="text-danger">Clothes</span>  <span className="text-light">Easy Life</span>" </marquee>
       </div>
     </section>
     {/* Clean clothes esay life end */}
