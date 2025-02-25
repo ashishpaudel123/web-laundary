@@ -4,7 +4,7 @@ import Pricing from '@/app/pricing/page'
 import Services from '@/app/services/page'
 import { TiTick } from "react-icons/ti";
 
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -16,7 +16,13 @@ document.getElementById("navbar").classList.add('fixed-top');
 }
 
 function page() {
-  window.onscroll = function() {scrollFunction()};
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.onscroll = function () {
+        scrollFunction();
+      };
+    }
+  }, []);
   return (
     <>
     {/* Landing page start */}
