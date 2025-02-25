@@ -45,7 +45,7 @@ function page() {
               </div>
             </div>
             <div className="col-lg-6 ">
-              <img data-aos="fade-up" data-aos-duration="3000"
+              <img data-aos="fade-up"
                 className="img-fluid rounded mt-4" src="https://mlcvmo0gntjk.i.optimole.com/cb:ICH-.67306/w:1600/h:1066/q:87/f:best/ig:avif/https://www.ecos.com/wp-content/uploads/2022/05/laundry.jpeg" alt="image" />
             </div>
           </div>
