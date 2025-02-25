@@ -1,14 +1,20 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import "aos/dist/aos.css"
 
 function page() {
+   useEffect(()=>{
+            AOS.init();
+        },[])
   return (
     <>
     <section className="my-2">
     <div className="container">
         <div className="row mt-4">
         <div className="col-lg-6">
-            <h2 className="fw-bold text-blue mt-3">CONTACT US</h2>
-            <div className="bg-light-blue shadow rounded">
+            <h2 className="fw-bold text-blue mt-3" data-aos="fade-up" data-aos-duration="3000">CONTACT US</h2>
+            <div className="bg-light-blue shadow rounded" data-aos="fade-up" data-aos-duration="3000">
             <form action className="p-4 d-flex flex-row gap-2 flex-wrap justify-content-between">
                 <label className="my-2 w-40" htmlFor><input className="form-control" type="text" name="name" id placeholder="Name" /></label>
                 <label className="my-2 w-40" htmlFor><input className="form-control" type="text" name="name" id placeholder="Email" /></label>
@@ -20,7 +26,7 @@ function page() {
               </form>
             </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6" data-aos="fade-up" data-aos-duration="3000">
             <div className="position-relative expimg">
             <img className="w-100" src="./img/quality assu girl.avif" alt="img" />
             <div>
