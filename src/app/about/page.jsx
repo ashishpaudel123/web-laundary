@@ -23,7 +23,7 @@ function About() {
           <li className='fw-bold'><TiTick style={{color: '#0b61f4'}}  /> Cutting-Edge Technology</li>
           <li className='fw-bold'><TiTick style={{color: '#0b61f4'}}  /> Customer-Centric Approach</li>
           <li className='fw-bold'><TiTick style={{color: '#0b61f4'}}  /> Passionate Expertise</li>
-          <a href={'/about'} className="rounded link-underline-primary p-2 fw-bold">View More...</a>
+          <Link href={'/about'} className="rounded link-underline-primary p-2 fw-bold">View More...</Link>
         </div>
 
         </div>
