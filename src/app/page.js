@@ -1,4 +1,6 @@
 "use client"
+import AOS from 'aos'
+import "aos/dist/aos.css"
 import About from '@/app/about/page'
 import Pricing from '@/app/pricing/page'
 import Services from '@/app/services/page'
@@ -22,6 +24,7 @@ function page() {
         scrollFunction();
       };
     }
+    AOS.init(); 
   }, []);
   return (
     <>
@@ -31,13 +34,13 @@ function page() {
           <div className="row home">
             <div className="col-lg-6 mt-3">
               <span className="fs-5 text-uppercase bg-light rounded px-3 py-2 fw-bold text-blue">Welcome to Laundary</span>
-              <p className="fw-bold text-light h pt-4">Where Freshness Meets Care</p>
+              <p className="fw-bold text-light h pt-4" data-aos="fade-up">Where Freshness Meets Care</p>
               <p className="white-50">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Nemo, rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ipsa? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
               </p>
               <div className="my-3 d-flex gap-3">
-                <button className="btn btn-info border-0 p-3 rounded fw-bold">Pick Up Now</button>
+                <button className="btn btn-info border-0 p-3 rounded fw-bold" data-aos="fade-up">Pick Up Now</button>
                 <button className=" btn btn-warning border-0 p-3 rounded fw-bold">Discover More</button>
               </div>
             </div>
@@ -91,7 +94,7 @@ function page() {
       <div className="container">
         <div className="row mt-4">
           <div className="col-lg-6">
-            <h2 className="fw-bold text-blue mt-3">Schedule Your Pick-Up or Delivery, We'll Take Care of the Rest!</h2>
+            <h2 className="fw-bold text-blue mt-3 "data-aos="fade-up">Schedule Your Pick-Up or Delivery, We'll Take Care of the Rest!</h2>
             <div className="bg-light-blue shadow rounded">
               <form action className="p-4 d-flex flex-row gap-2 flex-wrap justify-content-between">
                 <label className="my-2 w-40" htmlFor><input className="form-control" type="text" name="name" id placeholder="Name" /></label>
